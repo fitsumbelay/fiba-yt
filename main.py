@@ -68,8 +68,7 @@ def download():
                     'postprocessors': [{
                         'key': 'FFmpegExtractAudio',
                         'preferredcodec': 'mp3',
-                        'preferredquality': '192',
-                        'ffmpeg-location': os.environ.get('FFMPEG_PATH', '/usr/bin/ffmpeg')
+                        'preferredquality': '192'
                     }],
                     'outtmpl': os.path.join(temp_dir, '%(id)s.%(ext)s')  # Use unique filename
                 }
