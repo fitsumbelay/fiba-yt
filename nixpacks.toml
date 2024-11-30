@@ -1,2 +1,18 @@
-[phases.setup]
-aptPkgs = ["...", "ffmpeg"]
+[package]
+# Install FFmpeg and other necessary packages
+packages = [
+    "ffmpeg",
+
+]
+
+[setup]
+# Set environment variables to help yt-dlp locate FFmpeg
+cmd = """
+export PATH=$PATH:/usr/bin
+export FFMPEG_PATH=$(which ffmpeg)
+export YT_DLP_FFMPEG_LOCATION=$FFMPEG_PATH
+"""
+
+[start]
+# Your original start command (replace with your actual start command)
+cmd = "python3 main.py"
