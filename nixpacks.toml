@@ -2,7 +2,8 @@
 # Install FFmpeg and other necessary packages
 packages = [
     "ffmpeg",
-
+    "python3",
+    "python3-pip"
 ]
 
 [install]
