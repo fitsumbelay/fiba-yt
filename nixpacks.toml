@@ -1,5 +1,10 @@
+
+[phases.setup]
+nixPkgs = ["...", "ffmpeg"]
+nixLibs = ["...", "gcc-unwrapped"]
+aptPkgs = ["...", "wget"]
+
 [package]
-# Install FFmpeg and other necessary packages
 packages = [
     "ffmpeg",
     "python3",
