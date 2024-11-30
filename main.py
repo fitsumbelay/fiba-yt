@@ -45,10 +45,10 @@ def index():
 def download():
 
     url = request.json.get('url')
-
+    
     upload_url = request.json.get('upload_url')
     # print(request.json)
-    print(os.path.exists(ffmpeg_path), "path test fiba")
+    print(os.path.exists('/usr/bin/ffmpeg'), "path test fiba")
     # print(url, upload_url)
 
     if not url or not upload_url: 
